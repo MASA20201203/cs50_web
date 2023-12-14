@@ -7,13 +7,17 @@
     <script>
 
         function hello(){
-            document.querySelector('h1').innerHTML = "Googbye!"
+            if ( document.querySelector('h1').innerHTML === "Hello!" ) {
+                document.querySelector('h1').innerHTML = "Goodbye!"
+            } else {
+                document.querySelector('h1').innerHTML = "Hello!"
+            }
         }
 
     </script>
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Hello!</h1>
     <button onclick="hello()">Clik Here</button>
 </body>
 </html>
