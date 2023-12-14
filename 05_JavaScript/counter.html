@@ -13,10 +13,14 @@
             document.querySelector('h1').innerHTML = counter;
         }
 
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('button').onclick = count;
+        });
+
     </script>
 </head>
 <body>
     <h1>0</h1>
-    <button onclick="count()">Clik Here</button>
+    <button>Clik Here</button>
 </body>
 </html>
