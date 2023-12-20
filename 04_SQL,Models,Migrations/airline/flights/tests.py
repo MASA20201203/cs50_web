@@ -1,5 +1,5 @@
 from django.db.models import Max
-from django.test import TestCase
+from django.test import TestCase, Client
 
 from .models import Airport, Flight, Passenger
 
